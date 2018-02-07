@@ -1,0 +1,156 @@
+*, *:before, *:after { box-sizing: border-box; }
+
+html { font-family: 'Lato', sans-serif; font-size: 110%; -webkit-text-size-adjust: 100%; background: #ffffff; }
+
+body { margin: 0; padding: 0; line-height: 1.85em; font-weight: 400; color: #222222; }
+
+h1, h2, h3, p, table, label { margin: 0; color: #222222; }
+
+a { color: #3EE5AC; text-decoration: underline; }
+
+a:hover, a:focus, a:active { color: #3C96D2; }
+
+em { background: #eeeeee; font-style: normal; }
+
+p { font-size: 20px; font-weight: normal; }
+
+h1 { font-size: 36px; margin: 12px 0 24px 0; font-weight: 500; line-height: 1.3em; }
+
+h2 { font-size: 36px; margin: 12px 0 24px 0; font-weight: 500; line-height: 1.3em; }
+
+h3 { font-size: 18px; margin: 6px 0; font-weight: 500; }
+
+h4 { margin-top: 60px; }
+
+p { margin-bottom: 18px; color: #A2A2A2; }
+
+table { margin-bottom: 32px; }
+
+img { border: none; }
+
+input, label, select, button, textarea { margin: 0; border: 0; padding: 0; display: inline-block; vertical-align: middle; white-space: normal; background: none; line-height: 1; /* Browsers have different default form fonts */ font-size: 13px; font-family: Arial; }
+
+/* Box Sizing Reset
+-----------------------------------------------*/
+/* All of our custom controls should be what we expect them to be */
+input, textarea { -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; }
+
+/* These elements are usually rendered a certain way by the browser */
+button, input[type=reset], input[type=button], input[type=submit], input[type=checkbox], input[type=radio], select { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+/* Text Inputs
+-----------------------------------------------*/
+input[type=date], input[type=datetime], input[type=datetime-local], input[type=email], input[type=month], input[type=number], input[type=password], input[type=range], input[type=search], input[type=tel], input[type=text], input[type=time], input[type=url], input[type=week] { background: #ffffff; font-size: 14px; color: #222222; padding: 10px; border: 1px solid #DFE3E9; border-radius: 5px; box-sizing: border-box; display: block; width: 100%; margin-bottom: 20px; }
+
+/* Button Controls
+-----------------------------------------------*/
+input[type=checkbox], input[type=radio] { width: 13px; height: 13px; }
+
+/* File Uploads
+-----------------------------------------------*/
+/* Search Input
+-----------------------------------------------*/
+/* Make webkit render the search input like a normal text field */
+input[type=search] { -webkit-appearance: textfield; -webkit-box-sizing: border-box; }
+
+/* Turn off the recent search for webkit. It adds about 15px padding on the left */
+::-webkit-search-decoration { display: none; }
+
+/* Buttons
+-----------------------------------------------*/
+button, input[type="reset"], input[type="button"], input[type="submit"] { /* Fix IE7 display bug */ overflow: visible; width: auto; padding: 15px 50px 15px 15px; }
+
+/* IE8 and FF freak out if this rule is within another selector */
+::-webkit-file-upload-button { padding: 0; border: 0; background: none; }
+
+/* Textarea
+-----------------------------------------------*/
+textarea { /* Move the label to the top */ vertical-align: top; /* Turn off scroll bars in IE unless needed */ overflow: auto; }
+
+/* Selects
+-----------------------------------------------*/
+select[multiple] { /* Move the label to the top */ vertical-align: top; }
+
+label { font-size: 14px; display: block; text-align: left; margin-bottom: 10px; }
+
+.nav { display: block; padding: 20px; }
+
+.nav__logo { display: inline-block; margin: -2px 0 0 -3px; }
+
+.nav__home { font-size: 14px; text-decoration: none; margin-right: 12px; flex: 0; }
+
+.nav__items { display: flex; align-items: baseline; justify-content: space-between; padding: 0 5px; }
+
+.nav__item { text-decoration: none; padding: 18px 0; }
+
+a.nav__signin { position: absolute; top: 20px; right: 20px; margin: 0px; text-transform: uppercase; }
+
+@media all and (min-width: 769px) { .nav { display: flex; padding: 7vw 40px; margin: 0 auto; }
+  .nav__home { margin-right: 12px; flex: 1; }
+  .nav__items { padding-right: 20px; }
+  .nav__item { padding: 18px; }
+  a.nav__signin { position: relative; top: auto; right: auto; margin: 12px 0; } }
+.footer { background-color: #3C96D2; font-size: 14px; color: #ffffff; }
+.footer p { font-size: 14px; color: #B1DCF9; }
+
+.footer__section { display: block; padding: 10px 0; min-width: 224px; }
+.footer__section:first-child { border-bottom: 1px solid #377EAD; }
+
+.footer__logo, .footer__link { display: block; line-height: 24px; color: #ffffff; text-decoration: none; }
+.footer__logo:hover, .footer__link:hover { color: #ffffff; text-decoration: underline; }
+
+.footer__logo { margin-bottom: 20px; }
+
+@media all and (min-width: 769px) { .footer__sections { display: flex; flex-basis: auto; }
+  .footer__section { border-right: 1px solid #377EAD; width: 25%; padding-left: 30px; }
+  .footer__section:first-child { padding-left: 0px; border-bottom: 0px solid #377EAD; } }
+.header, .header--about { background: #1B202C; }
+.header h1, .header h2, .header p, .header label, .header a, .header--about h1, .header--about h2, .header--about p, .header--about label, .header--about a { color: #ffffff; }
+
+.header--about { min-height: auto; padding-bottom: 60px; }
+
+.header__section { max-width: 750px; margin: 0 auto; }
+.header__section h2 { margin-bottom: 46px; }
+
+.header__h1 { max-width: 900px; margin: 12px auto 24px auto; }
+
+.header__p { max-width: 540px; margin: 0 auto 18px auto; }
+
+.main, .main--about, .main--privacy-policy { padding: 30px 30px; max-width: 1145px; margin: 0 auto; }
+
+.main--about, .main--privacy-policy { text-align: left; max-width: 750px; }
+.main--about p, .main--privacy-policy p { color: #222222; }
+
+.main__img, .main__text { width: 100%; max-width: 503px; margin: 0 auto; display: block; }
+
+.main__open { margin: 20px 0 70px 0; }
+.main__open p { color: #222222; text-align: center; }
+.main__open h2 { text-align: center; }
+
+.main__section { margin-bottom: 60px; }
+.main__section:last-child { margin-bottom: 30px; }
+
+.main__cta { align-items: center; text-align: center; }
+
+.cta { background-color: #FAFAFA; height: 40vh; display: flex; flex-basis: auto; justify-content: center; align-items: center; text-align: center; }
+
+.register { max-width: 414px; padding: 20px; margin: 0 auto; }
+
+#mc_embed_signup div.mce_inline_error { background-color: #ffb297 !important; }
+
+#mc_embed_signup input.mce_inline_error { border-color: #ffb297 !important; }
+
+.footer { padding: 40px; }
+
+button, input[type="reset"], input[type="button"], input[type="submit"], .button, .button--secondary_rev, .button--secondary_rev_upper { /* Fix IE7 display bug */ overflow: visible; width: auto; padding: 14px 24px; margin: 20px 0; color: #1B202C; cursor: pointer; border-radius: 3px; background-color: #F5A623; text-decoration: none; font-size: 15px; font-weight: normal; line-height: 12px; }
+button:hover, button:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="button"]:hover, input[type="button"]:focus, input[type="submit"]:hover, input[type="submit"]:focus, .button:hover, .button:focus, .button--secondary_rev:hover, .button--secondary_rev:focus, .button--secondary_rev_upper:hover, .button--secondary_rev_upper:focus { color: #ffffff; padding: 14px 24px; outline: 0; -webkit-transition: all 0.3s; /* Safari */ transition: all 0.3s; }
+
+.button--secondary_rev { background: none; border: 1px solid #F5A623; }
+
+@media all and (min-width: 769px) { .cta { margin: 0 20px; }
+  .main__section { display: flex; align-items: flex-end; margin-bottom: 40px; }
+  .main__section:nth-child(odd) { flex-direction: row-reverse; }
+  .main__img, .main__text { width: 100%; max-width: 503px; margin: 0 20px; flex-basis: 50%; width: 100px; }
+  .main__img { padding-bottom: 30px; }
+  .footer { padding: 60px; } }
+.response { font-size: 24px; color: #ffffff; }
