@@ -1,11 +1,11 @@
 .footer {
-  background-color: $blue;
+  background-color: $grey;
   font-size: 14px;
   color: $white; 
-
+  padding: 0 40px 40px 40px;
   p {
     font-size: 14px;
-    color: $blue-light; 
+    color: $midnight; 
   }
 }
 
@@ -14,7 +14,7 @@
   padding: 10px 0;
   min-width: 224px;
   &:first-child {
-    border-bottom: 1px solid #377EAD;
+    border-bottom: 1px solid $midnight;
   }
 }
 
@@ -43,12 +43,12 @@
   }
 
   .footer__section {
-    border-right: 1px solid #377EAD;
+    border-right: 1px solid $midnight;
     width: 25%;
     padding-left: 30px;
     &:first-child {
       padding-left: 0px;
-      border-bottom: 0px solid #377EAD;
+      border-bottom: 0px solid $midnight;
     }
   }
 }
