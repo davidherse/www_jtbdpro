@@ -19,7 +19,7 @@ body {
   padding: 0;
   line-height: 1.85em;
   font-weight: 400;
-  color: $graphite;
+  color: $midnight;
 }
 
 h1,
@@ -29,6 +29,10 @@ p,
 table,
 label {
   margin: 0;
+  color: $midnight;
+}
+
+h2, h1 {
   color: $blue-light;
 }
 
@@ -68,9 +72,10 @@ h2 {
 }
 
 h3 {
-  font-size: 18px;
-  margin: 6px 0;
-  font-weight: 500;
+  font-size: 20px;
+  margin: 0px 0 10px 0;
+  font-weight: 600;
+  line-height: 1.3em;
 }
 
 h4 {
