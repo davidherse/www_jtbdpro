@@ -1,6 +1,8 @@
 .nav {
   display: block;
-  padding: 20px;
+  padding: 20px 20px 0 20px;
+  max-width: 1220px;
+  margin: 0 auto;
 }
 
 .nav__logo {
@@ -38,7 +40,7 @@ a.nav__signin {
 @media all and (min-width: 769px) {
   .nav {
     display: flex;
-    padding: 7vw 40px;
+    padding: 7vw 40px 2vw 40px;
     margin: 0 auto;
   }
   .nav__home {
