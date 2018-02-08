@@ -110,9 +110,14 @@ a.nav__signin { position: absolute; top: 20px; right: 20px; margin: 0px; text-tr
   .footer__section:first-child { padding-left: 0px; border-bottom: 0px solid #1B202C; } }
 .group--midnight { background: #1B202C; padding-bottom: 110px; }
 .group--midnight p, .group--midnight label, .group--midnight a:not(.button) { color: #ffffff; }
+.group--midnight .nav__logo--rev { display: block; }
+.group--midnight .nav__logo { display: none; }
 
 .group--white { background: #ffffff; padding-bottom: 40px; }
-.group--white p, .group--white label, .group--white a:not(.button) { color: #7c8086; }
+.group--white p { color: #7c8086; }
+.group--white label, .group--white h1, .group--white h2, .group--white a:not(.button) { color: #1B202C; }
+.group--white .nav__logo--rev { display: none; }
+.group--white .nav__logo { display: block; }
 
 .group--yellow { background: #F5A623; padding-bottom: 40px; }
 .group--yellow p, .group--yellow label, .group--yellow a:not(.button--secondary_white) { color: #ffffff; }
@@ -124,7 +129,7 @@ a.nav__signin { position: absolute; top: 20px; right: 20px; margin: 0px; text-tr
 
 .header__p { margin: 0 auto 40px auto; }
 
-.section, .section--rows, .section--rev_desk, .section--centre { max-width: 1220px; margin: 0 auto; padding: 0 20px 20px 20px; }
+.section, .section--rows, .section--rev_desk, .section--rev_end_desk, .section--centre { max-width: 1220px; margin: 0 auto; padding: 0 20px 20px 20px; }
 
 .section--centre { display: flex; padding-top: 100px; padding: 100px 50px 20px 50px; line-height: 41px; align-items: center; justify-content: center; flex-direction: column; }
 
@@ -134,9 +139,11 @@ a.nav__signin { position: absolute; top: 20px; right: 20px; margin: 0px; text-tr
 
 .header__img:nth-child(2) { display: none; }
 
-.diagonal--midnigth_white { /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1b202c+50,ffffff+50 */ background: #1b202c; /* Old browsers */ background: -moz-linear-gradient(4.5deg, #ffffff 49.7%, #1B202C 50%); /* FF3.6-15 */ background: -webkit-linear-gradient(4.5deg, #ffffff 49.7%, #1B202C 50%); /* Chrome10-25,Safari5.1-6 */ background: linear-gradient(4.5deg, #ffffff 49.7%, #1B202C 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ height: 10vw; margin-top: -2px; }
+.diagonal--midnigth_white { /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1b202c+50,ffffff+50 */ background: #ffffff; /* Old browsers */ background: -moz-linear-gradient(4.5deg, #ffffff 49.7%, #1B202C 50%); /* FF3.6-15 */ background: -webkit-linear-gradient(4.5deg, #ffffff 49.7%, #1B202C 50%); /* Chrome10-25,Safari5.1-6 */ background: linear-gradient(4.5deg, #ffffff 49.7%, #1B202C 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ height: 10vw; margin-top: -2px; }
 
-.diagonal--yellow_grey { /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1b202c+50,ffffff+50 */ background: #1b202c; /* Old browsers */ background: -moz-linear-gradient(4.5deg, #A2A2A2 49.7%, #F5A623 50%); /* FF3.6-15 */ background: -webkit-linear-gradient(4.5deg, #A2A2A2 49.7%, #F5A623 50%); /* Chrome10-25,Safari5.1-6 */ background: linear-gradient(4.5deg, #A2A2A2 49.7%, #F5A623 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ height: 10vw; margin-top: -2px; }
+.diagonal--yellow_grey { background: #F5A623; /* Old browsers */ background: -moz-linear-gradient(4.5deg, #A2A2A2 49.7%, #F5A623 50%); /* FF3.6-15 */ background: -webkit-linear-gradient(4.5deg, #A2A2A2 49.7%, #F5A623 50%); /* Chrome10-25,Safari5.1-6 */ background: linear-gradient(4.5deg, #A2A2A2 49.7%, #F5A623 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ height: 10vw; margin-top: -2px; }
+
+.diagonal--midnigth_grey { background: #1B202C; /* Old browsers */ background: -moz-linear-gradient(4.5deg, #A2A2A2 49.7%, #1B202C 50%); /* FF3.6-15 */ background: -webkit-linear-gradient(4.5deg, #A2A2A2 49.7%, #1B202C 50%); /* Chrome10-25,Safari5.1-6 */ background: linear-gradient(4.5deg, #A2A2A2 49.7%, #1B202C 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ height: 10vw; margin-top: -2px; }
 
 .profile { max-width: 183px; text-align: center; padding: 0px 20px 0 0px; margin-top: -120px; margin-bottom: 30px; }
 .profile p { color: #1B202C; font-size: 20px; margin-bottom: 5px; }
@@ -148,8 +155,6 @@ a.nav__signin { position: absolute; top: 20px; right: 20px; margin: 0px; text-tr
 .profile__social a { padding: 10px; display: inline-block; }
 
 .guarantee { font-size: 33px; text-align: center; max-width: 835px; }
-
-.register { max-width: 414px; padding: 20px; margin: 0 auto; }
 
 #mc_embed_signup div.mce_inline_error { background-color: #ffb297 !important; }
 
@@ -163,14 +168,36 @@ button:hover, button:focus, input[type="reset"]:hover, input[type="reset"]:focus
 .button--secondary_rev { background: none; border: 1px solid #F5A623; }
 
 .button--secondary_white { background-color: #ffffff; }
+.button--secondary_white:hover { color: #1B202C; }
+
+.form { max-width: 380px; width: 100%; margin: 40px auto 40px auto; position: relative; min-height: 50vh; }
+
+.reset { font-size: 12px; padding: 10px 0; display: inline-block; text-align: right; margin-top: -60px; position: absolute; right: 0px; }
+
+.bold { font-weight: bold; }
+
+.cart { padding: 20px 0; border-top: 1px solid #1B202C; margin-top: 20px; }
+.cart h2 { font-weight: normal; }
+.cart p { color: #1B202C; }
+
+.register { padding: 20px 0; border-top: 1px solid #1B202C; border-bottom: 1px solid #1B202C; }
+
+.price { margin-top: 20px; }
+
+.price__value { font-weight: bold; font-size: 37px; }
+
+.icon--cart { padding: 0 0px; }
+
+p.out-stock { color: red; font-size: 24px; margin-bottom: 0; }
 
 @media all and (min-width: 769px) { .group--midnight { padding-bottom: 30px; }
   .header__h1 { margin: 0px 0 24px 0; }
   .header__p { margin: 0px 0 39px 0; }
   .header__img { margin: 0px; }
-  .section, .section--rev_desk, .section--centre { display: flex; justify-content: space-between; }
+  .section, .section--rev_desk, .section--rev_end_desk, .section--centre { display: flex; justify-content: space-between; }
   .section--rows { display: block; }
-  .section--rev_desk { flex-flow: row-reverse; align-items: flex-end; }
+  .section--rev_desk { flex-flow: row-reverse; }
+  .section--rev_end_desk { flex-flow: row-reverse; align-items: flex-end; }
   .column, .column--single, .column--flex, .column--tight { flex: 1; padding: 20px 30px 0px 20px; }
   .column:last-child, .column--flex:last-child, .column--tight:last-child { padding: 20px 20px 20px 30px; }
   .column--flex, .column--tight, .column--tight:last-child { padding-top: 0; padding-bottom: 0; }

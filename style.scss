@@ -16,14 +16,31 @@
   p, label, a:not(.button)  {
     color: $white;
   }
+
+  .nav__logo--rev {
+    display: block;
+  }
+  .nav__logo {
+    display: none;
+  }
 }
 
 
 .group--white {
   background: $white; 
   padding-bottom: 40px;
-  p, label, a:not(.button)  {
+  p {
     color: $grey-light;
+  }
+
+  label, h1, h2, a:not(.button)  {
+    color: $midnight;
+  }
+  .nav__logo--rev {
+    display: none;
+  }
+  .nav__logo {
+    display: block;
   }
 }
 
@@ -54,6 +71,7 @@
 .section,
 .section--rows,
 .section--rev_desk,
+.section--rev_end_desk,
 .section--centre {
   max-width: 1220px;
   margin: 0 auto;
@@ -86,7 +104,7 @@
 
 .diagonal--midnigth_white {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1b202c+50,ffffff+50 */
-  background: #1b202c; /* Old browsers */
+  background: $white; /* Old browsers */
   background: -moz-linear-gradient(4.5deg, $white 49.7%, $midnight 50%); /* FF3.6-15 */
   background: -webkit-linear-gradient(4.5deg, $white 49.7%,$midnight 50%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(4.5deg, $white 49.7%,$midnight 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -95,11 +113,19 @@
 }
 
 .diagonal--yellow_grey {
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1b202c+50,ffffff+50 */
-  background: #1b202c; /* Old browsers */
+  background: $yellow; /* Old browsers */
   background: -moz-linear-gradient(4.5deg, $grey 49.7%, $yellow 50%); /* FF3.6-15 */
   background: -webkit-linear-gradient(4.5deg, $grey 49.7%,$yellow 50%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(4.5deg, $grey 49.7%,$yellow 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  height: 10vw;
+  margin-top: -2px;
+}
+
+.diagonal--midnigth_grey {
+  background: $midnight; /* Old browsers */
+  background: -moz-linear-gradient(4.5deg, $grey 49.7%, $midnight 50%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(4.5deg, $grey 49.7%,$midnight 50%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(4.5deg, $grey 49.7%,$midnight 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   height: 10vw;
   margin-top: -2px;
 }
@@ -138,12 +164,6 @@
   font-size: 33px;
   text-align: center;
   max-width: 835px;
-}
-
-.register {
-  max-width: 414px;
-  padding: 20px;
-  margin: 0 auto;
 }
 
 #mc_embed_signup div.mce_inline_error {
@@ -196,10 +216,71 @@ input[type="submit"],
 
 .button--secondary_white {
   background-color: $white;
+  &:hover {
+    color: $midnight;
+  }
 }
 
+.form {
+  max-width: 380px;
+  width: 100%;
+  margin: 40px auto 40px auto;
+  position: relative;
+  min-height: 50vh;
+}
 
+.reset {
+  font-size: 12px;
+  padding: 10px 0;
+  display: inline-block;
+  text-align: right;
+  margin-top: -60px;
+  position: absolute;
+  right: 0px;
+}
 
+.bold {
+  font-weight: bold;
+}
+
+.cart {
+  padding: 20px 0;
+  border-top: 1px solid $midnight;
+  margin-top: 20px;
+
+  h2 {
+    font-weight: normal;
+  }
+
+  p {
+    color: $midnight;
+  }
+}
+
+.register {
+  padding: 20px 0;
+  border-top: 1px solid $midnight;
+  border-bottom: 1px solid $midnight;  
+}
+
+.price {
+  margin-top: 20px;
+}
+
+.price__value {
+  font-weight: bold;
+  font-size: 37px;
+}
+
+.icon--cart {
+  padding: 0 0px;
+}
+
+p.out-stock {
+  color: red;
+  font-size: 24px;
+  margin-bottom: 0;
+}
 
 @media all and (min-width: 769px) {
 
@@ -221,6 +302,7 @@ input[type="submit"],
 
   .section,
   .section--rev_desk,
+  .section--rev_end_desk,
   .section--centre {
     display: flex;
     justify-content: space-between;
@@ -231,6 +313,10 @@ input[type="submit"],
   }
 
   .section--rev_desk {
+    flex-flow: row-reverse;
+  }
+ 
+  .section--rev_end_desk {
     flex-flow: row-reverse;
     align-items: flex-end; 
   }
