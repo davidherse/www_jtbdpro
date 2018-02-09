@@ -44,7 +44,7 @@ button, input[type=reset], input[type=button], input[type=submit], input[type=ch
 
 /* Text Inputs
 -----------------------------------------------*/
-input[type=date], input[type=datetime], input[type=datetime-local], input[type=email], input[type=month], input[type=number], input[type=password], input[type=range], input[type=search], input[type=tel], input[type=text], input[type=time], input[type=url], input[type=week] { background: #ffffff; font-size: 14px; color: #222222; padding: 10px; border: 1px solid #DFE3E9; border-radius: 5px; box-sizing: border-box; display: block; width: 100%; margin-bottom: 20px; }
+input[type=date], input[type=datetime], input[type=datetime-local], input[type=email], input[type=month], input[type=number], input[type=password], input[type=range], input[type=search], input[type=tel], input[type=text], input[type=time], input[type=url], input[type=week], textarea { background: #ffffff; font-size: 14px; color: #222222; padding: 10px; border: 1px solid #DFE3E9; border-radius: 2px; box-sizing: border-box; display: block; width: 100%; margin-bottom: 20px; }
 
 /* Button Controls
 -----------------------------------------------*/
@@ -163,7 +163,7 @@ a.nav__signin { position: absolute; top: 20px; right: 20px; margin: 0px; text-tr
 button, input[type="reset"], input[type="button"], input[type="submit"], .button, .button--secondary_rev, .button--secondary_white { /* Fix IE7 display bug */ overflow: visible; width: auto; padding: 14px 24px; margin: 20px 0; color: #1B202C; cursor: pointer; border-radius: 3px; background-color: #F5A623; text-decoration: none; font-size: 15px; font-weight: 600; line-height: 12px; }
 button:hover, button:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="button"]:hover, input[type="button"]:focus, input[type="submit"]:hover, input[type="submit"]:focus, .button:hover, .button:focus, .button--secondary_rev:hover, .button--secondary_rev:focus, .button--secondary_white:hover, .button--secondary_white:focus { color: #ffffff; padding: 14px 24px; outline: 0; -webkit-transition: all 0.3s; /* Safari */ transition: all 0.3s; }
 
-.response { font-size: 24px; color: #ffffff; }
+.response { font-size: 24px; color: #1B202C; }
 
 .button--secondary_rev { background: none; border: 1px solid #F5A623; }
 

@@ -160,14 +160,15 @@ input[type=tel],
 input[type=text],
 input[type=time],
 input[type=url],
-input[type=week]
+input[type=week],
+textarea
 {
   background: $white;
   font-size: 14px;
   color: $graphite;
   padding: 10px;
   border: 1px solid $grey-lighter;
-  border-radius: 5px;
+  border-radius: 2px;
   box-sizing:border-box;
   display: block;
   width: 100%;
