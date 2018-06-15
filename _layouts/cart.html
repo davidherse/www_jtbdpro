@@ -1,5 +1,6 @@
 ---
 layout: default
+
 ---
 <div class="group--white">
   {% include components/nav/index.html %}
@@ -11,6 +12,12 @@ layout: default
         <p class="price">
           <img src="{{ '/assets/img/cart.svg' | fingerprint }}" alt="" class="icon--cart"/>
             <span class="price__value">$49</span> for 3 lessons</p>
+
+        {% if page.redirect_to %}
+         <h3>Redirecting...</h3>
+          <a href="{{ page.redirect_to }}">Click here if you are not redirected.</a>
+          <script>location='{{ page.redirect_to }}'</script>
+        {% else %}
         <p class="out-stock">Sorry, course unavailable.</p>
         <p>We are updating this course with new exciting material.</p>
         <div class="register">
@@ -38,7 +45,9 @@ layout: default
               </div>
             </div>
           </form>
+
         </div>
+        {% endif %}
       </div>
     </div>
     <div class="column">

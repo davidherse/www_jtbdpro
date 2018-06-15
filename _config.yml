@@ -51,3 +51,5 @@ future: true
 jailed: false
 gfm_quirks: paragraph_end
 
+plugins:
+  - jekyll-redirect-from
