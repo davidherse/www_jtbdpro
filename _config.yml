@@ -18,7 +18,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Learn how turn customer research into products that people will buy.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-
+lesson_url: https://www.udemy.com/applying-jobs-to-be-done-theory/?couponCode=JTBDPRO2
 # Build settings
 markdown: kramdown
 
