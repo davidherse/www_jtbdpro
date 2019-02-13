@@ -85,14 +85,32 @@ label { font-size: 14px; display: block; text-align: left; margin-bottom: 10px; 
 
 .nav__items { display: flex; align-items: baseline; justify-content: space-between; padding: 0 5px; }
 
-.nav__item { text-decoration: none; padding: 18px 0; }
+.nav__item, .nav__item--desktop { text-decoration: none; padding: 22px 0; text-transform: uppercase; }
+.nav__item:last-child, .nav__item--desktop:last-child { padding-right: 0px; }
 
-a.nav__signin { position: absolute; top: 20px; right: 20px; margin: 0px; text-transform: uppercase; }
+.nav__item--desktop { display: none; }
 
+.dropdown__items { opacity: 0; visibility: hidden; position: absolute; background-color: #ffffff; min-width: 160px; box-shadow: 3px 2px 18px 0px rgba(0, 0, 0, 0.46); padding: 30px; z-index: 1; transition: all 0.3s; transform: translateY(-10px); transform-origin: top center; margin-top: 10px; margin-right: 20px; }
+.dropdown__items::before { content: ''; width: 0; height: 0; border-left: 15px solid transparent; border-right: 15px solid transparent; border-bottom: 15px solid #ffffff; position: absolute; top: -15px; left: 20px; }
+
+.dropdown__item, .dropdown__item--has-desc { display: block; text-decoration: none; font-size: 24px; font-weight: 600; line-height: 40px; }
+.dropdown__item:hover, .dropdown__item--has-desc:hover { color: #377EAD !important; }
+
+.dropdown__itemhead { display: block; }
+
+.dropdown__item--has-desc { line-height: 27px; margin-bottom: 20px; }
+
+.dropdown__itemsub { font-size: 18px; font-weight: normal; line-height: 20px; }
+
+.dropdown:hover .dropdown__items { opacity: 1; visibility: visible; transform: translateY(0px); }
+
+.dropdown__sectionhead { font-size: 18px; color: #7c8086; }
+
+@media all and (min-width: 1100px) { .nav__item--desktop { display: flex; } }
 @media all and (min-width: 769px) { .nav { display: flex; padding: 7vw 40px 2vw 40px; margin: 0 auto; }
   .nav__home { margin-right: 12px; flex: 1; }
-  .nav__items { padding-right: 20px; }
-  .nav__item { padding: 18px; }
+  .nav__item, .nav__item--desktop { padding: 22px; }
+  .nav__item:last-child, .nav__item--desktop:last-child { padding-right: 0px; }
   a.nav__signin { position: relative; top: auto; right: auto; margin: 12px 0; } }
 .footer { background-color: #A2A2A2; font-size: 14px; color: #ffffff; padding: 0 40px 40px 40px; }
 .footer p { font-size: 14px; color: #1B202C; }

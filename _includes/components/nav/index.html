@@ -4,11 +4,43 @@
     <img src="{{ '/assets/img/jtbd_pro_logo.svg' | fingerprint }}" class="nav__logo" alt="JTBD.pro" width="159"/>
   </a>
   <div class="nav__items">
-    <a class="nav__item" href="/training">Training</a>
-    <a class="nav__item" href="{{ site.lesson_url }}">Lessons</a>
-    <a class="nav__item" href="/contact">Contact</a>
+    <span class="dropdown">
+      <a href="#" class="nav__item">Services</a>
+      <span class="dropdown__items">
+        <span class="dropdown__sectionhead">By Role</span>
+        <a class="dropdown__item" href="/marketers">Marketers</a>
+        <a class="dropdown__item" href="/product-designers">Product Designers</a>
+        <a class="dropdown__item" href="/managers">Managers</a>
+        <hr>
+        <span class="dropdown__sectionhead">By Company Size</span>
+        <a class="dropdown__item" href="/early-stage">Early stage</a>
+        <a class="dropdown__item" href="/mid-Market/Enterprise">Mid Market/Enterprise</a>
+      </span>
+    </span>
+
+    <a class="nav__item--desktop" href="/contact">Why Jobs to be Done</a>
+
+    <span class="dropdown">
+      <a href="#" class="nav__item">Resources</a>
+      <span class="dropdown__items">
+        <a class="dropdown__item--has-desc" href="/marketers">
+          <span class="dropdown__itemhead">Blog</span>
+          <span class="dropdown__itemsub">Latest thinking on research, sales and marketing, product management, startups and more.</span>
+        </a>
+        <a class="dropdown__item--has-desc" href="/marketers">
+          <span class="dropdown__itemhead">Case Studies</span>
+          <span class="dropdown__itemsub">See how customers like Microbric are using Jobs to be Done.</span>
+        </a>
+        <a class="dropdown__item--has-desc" href="{{ site.lesson_url }}">
+          <span class="dropdown__itemhead">Lessons</span>
+          <span class="dropdown__itemsub">Information to learn how to practically apply Jobs to be Done.</span>
+        </a>
+      </span>
+    </span>
+
+    <a class="nav__item" href="/price">Price</a>
     <a class="nav__item" href="/about">About</a>
+    <a class="nav__item" href="/contact">Contact</a>
   </div>
-  <a class="button--secondary_rev nav__signin" href="{{ site.lesson_url }}">Sign in</a>
 </nav>
 
