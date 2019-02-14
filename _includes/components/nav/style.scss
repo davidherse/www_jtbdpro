@@ -10,8 +10,10 @@
 }
 
 .nav__logo {
-  display: inline-block;
-  margin: -2px 0 0 -3px
+  display: flex;
+  margin: -2px 0 0 -3px;
+  position: relative;
+  top: 0px;
 }
 
 .nav__home {
@@ -19,6 +21,9 @@
   text-decoration: none;
   margin-right: 12px;
   flex: 0;
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .nav__items {
@@ -29,7 +34,7 @@
 }
 
 
-.nav__item, .nav__item--desktop {
+.nav__item, .nav__item--desktop, .menutoggle__grouphead, .nav__item--mobile {
   text-decoration: none;
   padding: 22px 0;
   text-transform: uppercase;
@@ -37,6 +42,23 @@
   &:last-child {
     padding-right: 0px;
   }
+}
+
+
+.nav__item--mobile {
+  padding: 20px 0;
+  border-top: 1px solid $graphite;
+}
+
+
+.menutoggle__grouphead {
+  padding: 10px 0;
+  border-top: 1px solid $graphite;
+}
+
+.menutoggle__group {
+  padding: 20px 0;
+  display: block;
 }
 
 
@@ -71,28 +93,29 @@
   }
 }
 
-.dropdown__item, .dropdown__item--has-desc {
+.dropdown__item, .dropdown__item--has-desc, .menutoggle__item--has-desc, .menutoggle__item, .nav__item--mobile  {
   display: block;
   text-decoration: none;
   font-size: 24px;
   font-weight: 600;
   line-height: 40px;
+  text-transform: none;
 
   &:hover {
     color: $blue-dark !important;
   }
 }
 
-.dropdown__itemhead {
+.dropdown__itemhead, .menutoggle__itemhead {
   display: block;
 }
 
-.dropdown__item--has-desc {
+.dropdown__item--has-desc, .menutoggle__item--has-desc {
   line-height: 27px;
   margin-bottom: 20px;
 }
 
-.dropdown__itemsub {
+.dropdown__itemsub, .menutoggle__itemsub {
   font-size: 18px;
   font-weight: normal;
   line-height: 20px;
@@ -106,15 +129,20 @@
 
 }
 
-.dropdown__sectionhead {
+.dropdown__sectionhead, .menutoggle__sectionhead {
   font-size: 18px;
   color: $grey-light;
 }
 
+.menutoggle__sectionhead {
+  margin-top: 10px;
+  display: block;
+}
+
 .menutoggle {
   position: absolute;
-  right: 40px;
-  top: 40px;
+  right: 20px;
+  top: 20px;
   cursor: pointer;
   background: none;
   &:hover {
@@ -172,8 +200,20 @@
   transition: all 0.3s;
   transform: translateY(-10px);
   transform-origin: top center;
-  margin-top: 10px;
+  margin-top: 0px;
   margin-right: 20px;
+
+  &::before {
+    content: '';
+    width: 0; 
+    height: 0; 
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid $white;
+    position: absolute;
+    top: -15px;
+    right: 12px;
+  }
 }
 
 
@@ -199,9 +239,10 @@
   .nav__home {
     margin-right: 12px;
     flex: 1;
+    padding-top: 9px;
   }
 
-  .nav__item {
+  .nav__item, .nav__item--mobile {
     padding: 22px;
 
     &:last-child {

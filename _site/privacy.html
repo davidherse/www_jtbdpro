@@ -91,23 +91,26 @@
   </button>
   <div class="menutoggle__menu" id="mobile_menu_01">
     <span class="menutoggle__group">
-      <a href="#" class="menutoggle__sectionhead">Services</a>
+      <a href="#" class="menutoggle__grouphead">Services</a>
       <span class="menutoggle__items">
         <span class="menutoggle__sectionhead">By Role</span>
         <a class="menutoggle__item" href="/marketers">Marketers</a>
         <a class="menutoggle__item" href="/product-designers">Product Designers</a>
         <a class="menutoggle__item" href="/managers">Managers</a>
-        <hr>
+      
         <span class="menutoggle__sectionhead">By Company Size</span>
         <a class="menutoggle__item" href="/early-stage">Early stage</a>
         <a class="menutoggle__item" href="/mid-Market/Enterprise">Mid Market/Enterprise</a>
       </span>
     </span>
 
-    <a class="nav__item" href="/contact">Why Jobs to be Done</a>
+    <a class="nav__item--mobile" href="/contact">Why Jobs to be Done</a>
+    <a class="nav__item--mobile" href="/price">Price</a>
+    <a class="nav__item--mobile" href="/about">About</a>
+    <a class="nav__item--mobile" href="/contact">Contact</a>
 
     <span class="nav__group">
-      <a href="#" class="menutoggle__sectionhead">Resources</a>
+      <a href="#" class="menutoggle__grouphead">Resources</a>
       <span class="menutoggle__items">
         <a class="menutoggle__item--has-desc" href="/marketers">
           <span class="menutoggle__itemhead">Blog</span>
@@ -124,9 +127,7 @@
       </span>
     </span>
 
-    <a class="nav__item" href="/price">Price</a>
-    <a class="nav__item" href="/about">About</a>
-    <a class="nav__item" href="/contact">Contact</a>
+
   </div>
 </nav>
 
@@ -228,7 +229,7 @@ drift.load('mwhzfabmr57p');
   var closeTriggered = false;
 
   bodyElem.addEventListener('click', function(e) {
-    if(isOpen ) {
+    if(isOpen) {
       menuElem.classList.remove('open');
       menutoggleElem.classList.remove('open');
       isOpen = false;
