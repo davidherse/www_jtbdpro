@@ -51,15 +51,6 @@
 }
 
 
-.menutoggle__grouphead {
-  padding: 10px 0;
-  border-top: 1px solid $graphite;
-}
-
-.menutoggle__group {
-  padding: 20px 0;
-  display: block;
-}
 
 
 .nav__item--desktop {
@@ -80,7 +71,7 @@
   transform-origin: top center;
   margin-right: 20px;
 
-  &::before {
+  &::after {
     content: '';
     width: 0; 
     height: 0; 
@@ -131,13 +122,24 @@
 
 .dropdown__sectionhead, .menutoggle__sectionhead {
   font-size: 18px;
-  color: $grey-light;
+  color: $grey;
 }
 
 .menutoggle__sectionhead {
   margin-top: 10px;
   display: block;
 }
+
+.menutoggle__grouphead {
+  padding: 10px 0;
+  border-top: 1px solid $graphite;
+}
+
+.menutoggle__group {
+  padding: 20px 0;
+  display: block;
+}
+
 
 .menutoggle {
   position: absolute;
@@ -178,11 +180,13 @@
   .menutoggle__close {
     opacity: 1;
     visibility: visible;
+    transform: rotate(-90deg);
   }
 
   .menutoggle__open {
     opacity: 0;
     visibility: hidden;
+    transform: rotate(-135deg); 
   }
 }
 
@@ -194,6 +198,9 @@
   position: absolute;
   background-color: $white;
   min-width: 160px;
+  display: flex;
+  flex-direction: column;
+  right: 0px;
   box-shadow: 3px 2px 18px 0px rgba(0,0,0,0.46);
   padding: 30px;
   z-index: 1;
@@ -202,6 +209,7 @@
   transform-origin: top center;
   margin-top: 0px;
   margin-right: 20px;
+  margin-left: 20px;
 
   &::before {
     content: '';
