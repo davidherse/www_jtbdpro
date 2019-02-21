@@ -156,7 +156,7 @@ p.footer__copywrite { font-size: 16px; }
 .group--midnight .nav__logo--rev, .group--callout .nav__logo--rev, .group--grey-dark .nav__logo--rev { display: flex; }
 .group--midnight .nav__logo, .group--callout .nav__logo, .group--grey-dark .nav__logo { display: none; }
 
-.group--callout { padding-bottom: 0px; margin-top: -105px; }
+.group--callout { padding-bottom: 0px; margin-top: -130px; }
 .group--callout .section { padding: 50px; }
 
 .group--grey-dark { padding-bottom: 0px; }
