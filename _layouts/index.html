@@ -1,40 +1,104 @@
 ---
 layout: default
 ---
-<div class="group--midnight">
+<div class="group--white">
   {% include components/nav/index.html %}
 
-  <div class="section">
-    <div class="column">
-      <h1 id="register" class="header__h1">Learn how to turn customer research into products that people will buy.</h1>
-      <p class="header__p">How can we create products that bring real value to users? Why do users choose one product over another? How do some products manage to disrupt and innovate while others stay stagnate? The answer lies in the ‘job’ a user is hiring a product to do.</p>
+  <div class="section--min-heigth-400">
+    <div class="column--header">
+      <h1 id="register" class="header__h1">Make things that people love.</h1>
+      <p class="header__p">We are customer research and coaching specialists applying Jobs to be Done Theory to help businesses succeed.</p>
 
-      <a href="{{ site.lesson_url }}" class="button">Buy 3 Lessons</a>
+      <a href="/contact" class="button">Get in touch</a>
     </div>
 
-    <div class="column">
-      <img src="{{ '/assets/img/jtbd_seminar.png' | fingerprint }}" class="header__img" alt=""/>
-      <img src="{{ '/assets/img/jtbd_seminar_02.png' | fingerprint }}" class="header__img" alt=""/>
-    </div>
-  </div>
-
-  <div class="section">
-    <div class="column--single_3_4th">
-      <h2>Who’s this for?</h2>
-      <p>This is a practical guide for individuals looking to apply the Jobs-to-be-Done Theory. It’s suitable for anyone responsible for researching and facilitating product development. From designers in large established business to entrepreneurs starting out. The information is valuable for people creating software products, services or physical items. We recommended some knownledge of <a href="https://www.amazon.com/Competing-Against-Luck-Innovation-Customer/dp/0062435612">Jobs-to-be-Done Theory</a> and <a href="http://jobstobedone.org/">interview techniques</a> before starting.</p>
-
-      <h2>What do you get?</h2>
-      <p>This course includes access to 3 downloadable step-by-step lessons. It covers the fundamentals of Jobs-to-be-Done research and advanced detail on how to unlock your findings to drive innovation.</p>
+    <div class="column--header">
+      <img src="{{ '/assets/img/header_making.png' | fingerprint }}" class="header__img" alt=""/>
     </div>
   </div>
 </div>
 
-<div class="diagonal--midnigth_white"></div>
-{% include components/profiles/index.html %}
-<div class="group--yellow">
-  <div class="section--centre">
-    <p class="guarantee">100% money back guarantee. If this does not help you create better products, we’ll give you your money back.</p>
-    <a href="{{ site.lesson_url }}" class="button--secondary_white">Buy 3 Lessons</a>
+<div class="group--callout">
+  <div class="section">
+    <div class="highlights">
+      <a href="/marketers"  class="highlight">
+        <h2 href="/marketers" class="highlight__h2">Jobs to be Done for Marketers</h2>
+        <p class="highlight__p">Improve the sale of a product. Truly understand your customer. Create effective marketing strategies.</p>
+        <span class="highlight__learn-more">Learn more →</span>
+      </a>
+      <a href="/product-designers" class="highlight">
+        <h2 class="highlight__h2">Jobs to be Done for Product Designers</h2>
+        <p class="highlight__p">Uncover opportunities. Create innovative products.</p>
+         <span  class="highlight__learn-more">Learn more →</span>
+      </a>
+      <a href="/managers" class="highlight">
+        <h2 class="highlight__h2">Jobs to be Done for Managers</h2>
+        <p class="highlight__p">Unify the direction of your team. Train staff on effective research and ideation techniques.</p>
+         <span href="/marketers" class="highlight__learn-more">Learn more →</span>
+      </a>
+    </div>
   </div>
 </div>
-<div class="diagonal--yellow_grey"></div>
+
+<div class="group--grey-light">
+  <div class="section">
+    <div class="column">
+      <h1 class="column__h1">Why companies use Jobs to be Done.</h1> 
+    </div>
+  </div>   
+  <div class="section--no-pad-top">
+      <div class="column--flex-start">
+        <div class="column__icons">
+          <img src="{{ '/assets/img/customer.svg' | fingerprint }}" class="" alt=""/>
+        </div>
+        <div>
+          <h2>Understand your customers.</h2>
+          <p>Use Jobs to be Done Research to work out why some customers stick around and how to attract more of them. As well as why customers are leaving you and how to keep them.</p>
+        </div>
+      </div>
+      <div class="column--flex-start">
+        <div class="column__icons">
+          <img src="{{ '/assets/img/competition.svg' | fingerprint }}" class="" alt=""/>
+        </div>
+        <div>
+          <h2>Find out your true competition.</h2>
+          <p>You would be surprised to learn who you are truly competing with and how those competitors might be solving your customers job better then you are. </p>
+        </div>
+    </div>
+    <div class="column--flex-start">
+        <div class="column__icons">
+          <img src="{{ '/assets/img/job.svg' | fingerprint }}" class="" alt=""/>
+        </div>
+        <div>
+          <h2>Innovate for new opportunities.</h2>
+          <p>Find out where the pain points are in your customers journey and then innovate to improve or remove them.</p>
+        </div>
+    </div>
+  </div>
+  <div class="section--no-pad-top">
+      <div class="column--flex-start">
+        <div class="column__icons">
+          <img src="{{ '/assets/img/market.svg' | fingerprint }}" class="" alt=""/>
+        </div>
+        <div>
+          <h2>Better market your product.</h2>
+          <p>Make sure you’re marketing communication and sales message aligns with the product you are building for your customers.</p>
+        </div>
+      </div>
+      <div class="column--flex-start">
+        <div class="column__icons">
+          <img src="{{ '/assets/img/star.svg' | fingerprint }}" class="" alt=""/>
+        </div>
+        <div>
+          <h2>Align your teams to a north star.</h2>
+          <p>Use Jobs to be Done Research to align teams and give your company a north star to aim towards. Allow everyone to get on the same page and understands how their work fits in with the customers goals.</p>
+        </div>
+    </div>
+    <div class="column--flex-start">
+      <img class="column__img" src="{{ '/assets/img/undraw_teaching_f1cm.png' | fingerprint }}" alt=""/>
+    </div>
+  </div>
+  <div class="section">
+    {% include components/cta/index.html %}
+  </div> 
+</div>

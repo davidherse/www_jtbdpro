@@ -34,20 +34,55 @@
 
     <body>      
       <div class="group--white">
-  <nav class="nav">
+  <nav class="nav--desktop">
   <a href="/" class="nav__home">
     <img src="/assets/img/jtbd_pro_logo_rev.svg" class="nav__logo--rev" alt="JTBD.pro" width="159"/>
     <img src="/assets/img/jtbd_pro_logo.svg" class="nav__logo" alt="JTBD.pro" width="159"/>
   </a>
   <div class="nav__items">
-    <a class="nav__item" href="/training">Training</a>
+    <span class="dropdown">
+      <a href="#" class="nav__item">Services</a>
+      <span class="dropdown__items">
+        <span class="dropdown__sectionhead">By Role</span>
+        <a class="dropdown__item" href="/marketers">Marketers</a>
+        <a class="dropdown__item" href="/product-designers">Product Designers</a>
+        <a class="dropdown__item" href="/managers">Managers</a>
+      </span>
+    </span>
+
+    <a class="nav__item" href="/why-jobs-to-be-done">Why Jobs to be Done</a>
     <a class="nav__item" href="https://www.udemy.com/applying-jobs-to-be-done-theory/?couponCode=JTBDPR01">Lessons</a>
-    <a class="nav__item" href="/contact">Contact</a>
     <a class="nav__item" href="/about">About</a>
+    <a class="nav__item" href="/contact">Contact</a>
   </div>
-  <a class="button--secondary_rev nav__signin" href="https://www.udemy.com/applying-jobs-to-be-done-theory/?couponCode=JTBDPR01">Sign in</a>
 </nav>
 
+<nav class="nav--mobile">
+  <a href="/" class="nav__home">
+    <img src="/assets/img/jtbd_pro_logo_rev.svg" class="nav__logo--rev" alt="JTBD.pro" width="159"/>
+    <img src="/assets/img/jtbd_pro_logo.svg" class="nav__logo" alt="JTBD.pro" width="159"/>
+  </a>
+  <button class="menutoggle" id="menutoggle" data-target="mobile_menu_01">
+    <img src="/assets/img/menu.svg" class="menutoggle__open" alt=""/>
+    <img src="/assets/img/close.svg" class="menutoggle__close" alt=""/>
+  </button>
+  <div class="menutoggle__menu" id="mobile_menu_01">
+    <span class="menutoggle__group">
+      <a href="#" class="menutoggle__grouphead">Services</a>
+      <span class="menutoggle__items">
+        <span class="menutoggle__sectionhead">By Role</span>
+        <a class="menutoggle__item" href="/marketers">Marketers</a>
+        <a class="menutoggle__item" href="/product-designers">Product Designers</a>
+        <a class="menutoggle__item" href="/managers">Managers</a>
+      </span>
+    </span>
+
+    <a class="nav__item--mobile" href="/why-jobs-to-be-done">Why Jobs to be Done</a>
+    <a class="nav__item--mobile" href="https://www.udemy.com/applying-jobs-to-be-done-theory/?couponCode=JTBDPR01">Lessons</a>
+    <a class="nav__item--mobile" href="/about">About</a>
+    <a class="nav__item--mobile" href="/contact">Contact</a>
+  </div>
+</nav>
 
   <div class="section">
     <div class="column">
@@ -203,25 +238,33 @@ We reserve the right, but are not obligated, to limit the sales of our Services 
   </div>
 </div>
 
-<div class="group--yellow">
-  <div class="section--centre">
-    <p class="guarantee">100% money back guarantee. If this does not help you create better products, we’ll give you your money back.</p>
-    <a href="/cart" class="button--secondary_white">Buy 11 Lessons</a>
-  </div>
-</div>
-<div class="diagonal--yellow_grey"></div>
-
 
       <div class="footer">
   <div class="footer__sections">
     <section class="footer__section">
-      <a href="/about" class="footer__link">About Us</a>
-      <a href="/contact" class="footer__link">Contact Us</a>
+      <p class="footer__sectionhead">Use Cases</p>
+      <a href="/marketers" class="footer__link">Marketers</a>
+      <a href="/product-designers" class="footer__link">Product Designers</a>
+      <a href="/managers" class="footer__link">Managers</a>
     </section>
     <section class="footer__section">
-      <a href="/terms" class="footer__link">Terms & Conditions</a>
-      <a href="/privacy" class="footer__link">Privacy Policy</a>
+      <p class="footer__sectionhead">Resources</p>
+      <a href="https://www.udemy.com/applying-jobs-to-be-done-theory/?couponCode=JTBDPR01" class="footer__link">Lessons</a>
+    </section>
+    <section class="footer__section">
+      <p class="footer__sectionhead">Company</p>
+      <a href="/about" class="footer__link">About</a>
+      <a href="/contact" class="footer__link">Contact Us</a>
+      <a href="/terms" class="footer__link">Terms</a>
+      <a href="/privacy" class="footer__link">Privacy</a>
       <p class="footer__copywrite">© Let’s Make One Pty Ltd</p>
+    </section>
+    <section class="footer__section">
+      <p class="footer__sectionhead">From the blog</p>
+      <a href="https://jtbd.info/using-jobs-to-be-done-in-a-marketing-workshop-b67644b57d22" class="footer__link">Using Jobs-to-be-Done in a Marketing workshop</a>
+      <a href="https://jtbd.info/top-10-tips-for-introducing-jobs-to-be-done-theory-to-your-company-259ad424643d" class="footer__link">Top 10 tips for introducing Jobs-to-be-Done theory to your company</a>
+      <a href="https://jtbd.info/what-to-do-with-all-your-jtbd-research-84b92774f42f" class="footer__link">What to do with all your JTBD research</a>
+      <a href="https://jtbd.info/top-8-tips-for-jtbd-interviews-6739c88f1cc9" class="footer__link">Top 8 tips for JTBD Interviews</a>
     </section>
   </div>
 </div>
@@ -251,6 +294,42 @@ drift.SNIPPET_VERSION = '0.3.1';
 drift.load('mwhzfabmr57p');
 </script>
 <!-- End of Async Drift Code -->
+
+<script>
+(function() {
+  var menutoggleElem = document.getElementById('menutoggle');
+  var menuId = menutoggleElem.dataset.target;
+  var menuElem = document.getElementById(menuId);
+  var bodyElem = document.getElementsByTagName('body')[0];
+
+  var isOpen = false;
+  var closeTriggered = false;
+
+  bodyElem.addEventListener('click', function(e) {
+    if(isOpen) {
+      menuElem.classList.remove('open');
+      menutoggleElem.classList.remove('open');
+      isOpen = false;
+      closeTriggered = true;
+    }
+    setTimeout(function() {
+      closeTriggered = false;
+      console.log(closeTriggered);
+    })
+  }, true);
+
+  menutoggleElem.addEventListener('click', function(e) {
+    if(!isOpen && closeTriggered == false) {
+      menuElem.classList.add('open');
+      menutoggleElem.classList.add('open');
+      isOpen = true;
+    } else {
+      closeTriggered = false;
+    }
+  });
+
+}());
+</script>
 
     </body>
 </html>

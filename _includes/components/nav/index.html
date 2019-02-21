@@ -1,14 +1,49 @@
-<nav class="nav">
+<nav class="nav--desktop">
   <a href="{{ '/' | relative_url }}" class="nav__home">
     <img src="{{ '/assets/img/jtbd_pro_logo_rev.svg' | fingerprint }}" class="nav__logo--rev" alt="JTBD.pro" width="159"/>
     <img src="{{ '/assets/img/jtbd_pro_logo.svg' | fingerprint }}" class="nav__logo" alt="JTBD.pro" width="159"/>
   </a>
   <div class="nav__items">
-    <a class="nav__item" href="/training">Training</a>
+    <span class="dropdown">
+      <a href="#" class="nav__item">Services</a>
+      <span class="dropdown__items">
+        <span class="dropdown__sectionhead">By Role</span>
+        <a class="dropdown__item" href="/marketers">Marketers</a>
+        <a class="dropdown__item" href="/product-designers">Product Designers</a>
+        <a class="dropdown__item" href="/managers">Managers</a>
+      </span>
+    </span>
+
+    <a class="nav__item" href="/why-jobs-to-be-done">Why Jobs to be Done</a>
     <a class="nav__item" href="{{ site.lesson_url }}">Lessons</a>
-    <a class="nav__item" href="/contact">Contact</a>
     <a class="nav__item" href="/about">About</a>
+    <a class="nav__item" href="/contact">Contact</a>
   </div>
-  <a class="button--secondary_rev nav__signin" href="{{ site.lesson_url }}">Sign in</a>
 </nav>
 
+<nav class="nav--mobile">
+  <a href="{{ '/' | relative_url }}" class="nav__home">
+    <img src="{{ '/assets/img/jtbd_pro_logo_rev.svg' | fingerprint }}" class="nav__logo--rev" alt="JTBD.pro" width="159"/>
+    <img src="{{ '/assets/img/jtbd_pro_logo.svg' | fingerprint }}" class="nav__logo" alt="JTBD.pro" width="159"/>
+  </a>
+  <button class="menutoggle" id="menutoggle" data-target="mobile_menu_01">
+    <img src="{{ '/assets/img/menu.svg' | fingerprint }}" class="menutoggle__open" alt=""/>
+    <img src="{{ '/assets/img/close.svg' | fingerprint }}" class="menutoggle__close" alt=""/>
+  </button>
+  <div class="menutoggle__menu" id="mobile_menu_01">
+    <span class="menutoggle__group">
+      <a href="#" class="menutoggle__grouphead">Services</a>
+      <span class="menutoggle__items">
+        <span class="menutoggle__sectionhead">By Role</span>
+        <a class="menutoggle__item" href="/marketers">Marketers</a>
+        <a class="menutoggle__item" href="/product-designers">Product Designers</a>
+        <a class="menutoggle__item" href="/managers">Managers</a>
+      </span>
+    </span>
+
+    <a class="nav__item--mobile" href="/why-jobs-to-be-done">Why Jobs to be Done</a>
+    <a class="nav__item--mobile" href="{{ site.lesson_url }}">Lessons</a>
+    <a class="nav__item--mobile" href="/about">About</a>
+    <a class="nav__item--mobile" href="/contact">Contact</a>
+  </div>
+</nav>

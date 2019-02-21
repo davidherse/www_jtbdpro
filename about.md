@@ -1,6 +1,6 @@
 ---
 layout: about
-title: Userology - About us & user experience 
+title: About us & Jobs to be Done
 permalink: /about
 ---
 
