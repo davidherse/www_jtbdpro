@@ -150,7 +150,7 @@ label { font-size: 14px; display: block; text-align: left; margin-bottom: 10px; 
 p.footer__copywrite { font-size: 16px; }
 
 @media all and (min-width: 769px) { .footer__sections { display: flex; flex-basis: auto; }
-  .footer__section { width: 20%; padding-left: 30px; padding-left: 0px; border-bottom: 0px solid #3E4D60; } }
+  .footer__section { width: 25%; padding-left: 30px; padding-left: 0px; border-bottom: 0px solid #3E4D60; } }
 .group--midnight, .group--callout, .group--grey-dark { background: #3E4D60; padding-bottom: 110px; }
 .group--midnight p, .group--midnight label, .group--midnight a:not(.button), .group--midnight .group--callout .highlight__learn-more:not(.button), .group--callout .group--midnight .highlight__learn-more:not(.button), .group--midnight .group--grey-dark .highlight__learn-more:not(.button), .group--grey-dark .group--midnight .highlight__learn-more:not(.button), .group--midnight a:not(.button--cta), .group--midnight .group--callout .highlight__learn-more:not(.button--cta), .group--callout .group--midnight .highlight__learn-more:not(.button--cta), .group--midnight .group--grey-dark .highlight__learn-more:not(.button--cta), .group--grey-dark .group--midnight .highlight__learn-more:not(.button--cta), .group--callout p, .group--callout label, .group--callout a:not(.button), .group--callout .highlight__learn-more:not(.button), .group--callout a:not(.button--cta), .group--callout .highlight__learn-more:not(.button--cta), .group--grey-dark p, .group--grey-dark label, .group--grey-dark a:not(.button), .group--grey-dark .highlight__learn-more:not(.button), .group--grey-dark a:not(.button--cta), .group--grey-dark .highlight__learn-more:not(.button--cta) { color: #ffffff; }
 .group--midnight .nav__logo--rev, .group--callout .nav__logo--rev, .group--grey-dark .nav__logo--rev { display: flex; }
@@ -193,7 +193,7 @@ p.footer__copywrite { font-size: 16px; }
 
 .column, .column--flex, .column--flex-start { display: flex; align-content: center; flex-direction: column; }
 
-.column--flex, .column--flex-start, .cta { display: flex; justify-content: space-evenly; }
+.column--flex, .column--flex-start, .column--flex-row, .cta { display: flex; justify-content: space-evenly; }
 
 .column--header { text-align: center; }
 
