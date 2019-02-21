@@ -191,9 +191,9 @@ p.footer__copywrite { font-size: 16px; }
 
 .section--centre { display: flex; padding-top: 100px; padding: 100px 50px 20px 50px; line-height: 41px; align-items: center; justify-content: center; flex-direction: column; }
 
-.column--center { text-align: center; flex: 1 1 auto; }
+.column--center { text-align: center; flex: 1 1 auto; width: 100%; }
 
-.column--flex, .column--flex-start { min-height: 1px; display: flex; align-content: center; flex-direction: column; }
+.column--flex, .column--flex-start { min-height: 1px; display: flex; align-content: center; flex-direction: column; width: 100%; }
 
 .column--flex, .column--flex-start, .column--flex-row { display: flex; justify-content: space-evenly; }
 
@@ -288,8 +288,7 @@ p.out-stock { color: red; font-size: 24px; margin-bottom: 0; }
 .group--callout .highlight__learn-more, .group--grey-dark .highlight__learn-more { color: #3C96D2 !important; text-decoration: none; position: absolute; bottom: 10px; left: 20px; }
 .group--callout .highlight__learn-more:hover, .group--grey-dark .highlight__learn-more:hover { text-decoration: underline; }
 
-@media all and (min-width: 769px) { .column--header { width: 50%; }
-  .column__icons { width: auto; padding-top: 0px; }
+@media all and (min-width: 769px) { .column__icons { width: auto; padding-top: 0px; }
   .column__img { width: 100%; }
   .group--midnight { padding-bottom: 30px; }
   .header__h1 { margin: 0px 0 24px 0; }
@@ -299,7 +298,8 @@ p.out-stock { color: red; font-size: 24px; margin-bottom: 0; }
   .section--rows { display: block; }
   .section--rev_desk { flex-flow: row-reverse; }
   .section--rev_end_desk { flex-flow: row-reverse; align-items: flex-end; }
-  .column, .column--center, .column--header, .column--single, .column--flex, .column--flex-start, .column--tight { flex: 1 1 auto; padding: 20px 20px 0px 20px; }
+  .column--header { width: 50%; }
+  .column, .column--center, .column--header, .column--single, .column--flex, .column--flex-start, .column--tight { flex: 1 1 auto; padding: 20px 20px 0px 20px; width: 50%; }
   .column:last-child, .column--header:last-child, .column--flex:last-child, .column--tight:last-child { padding: 20px 20px 20px 20px; }
   .column--flex, .column--flex-start, .column--tight, .column--tight:last-child { padding-top: 0; padding-bottom: 0; }
   .column--flex-start { padding: 0px; flex-direction: row; text-align: left; }
