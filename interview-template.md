@@ -8,6 +8,12 @@ permalink: /script-template
 
 Jobs-to-be-Done example Workshop Interview Script 
 
+**Remember, if you are recording the interview or other team members are listening to the interview, you need to let people know.**
+
+We just need to let you know that we will be recording the call so that we can review the information discussed in the interview later, and we may have additional team members listening to the call for internal training purposes. Is that OK?
+
+**Set up how the interview is going to run, what they should expected and what you are looking for.**
+
 A good way to think about this is that we are literally filming a documentary. We want all the details around when you first started thinking about buying [x]. When you made the decision and experiencing it for the first time. We’ll ask really broad questions and then there will be occasions where we will slow down time. Ask you questions about where you and were who you with – dive really deep into the detail. It’s a funny method. But bear with us and you’ll see how it all comes together
 
 - When did you purchase the product?
