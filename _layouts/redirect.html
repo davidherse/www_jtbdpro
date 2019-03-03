@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+    <body>
+            <div class="group--white">
+      <nav class="nav--desktop">
+        <a href="{{ '/' | relative_url }}" class="nav__home">
+          <img src="{{ '/assets/img/jtbd_pro_logo_rev.svg' | fingerprint }}" class="nav__logo--rev" alt="JTBD.pro" width="159"/>
+          <img src="{{ '/assets/img/jtbd_pro_logo.svg' | fingerprint }}" class="nav__logo" alt="JTBD.pro" width="159"/>
+        </a>
+      </nav>
+
+      <nav class="nav--mobile">
+        <a href="{{ '/' | relative_url }}" class="nav__home">
+          <img src="{{ '/assets/img/jtbd_pro_logo_rev.svg' | fingerprint }}" class="nav__logo--rev" alt="JTBD.pro" width="159"/>
+          <img src="{{ '/assets/img/jtbd_pro_logo.svg' | fingerprint }}" class="nav__logo" alt="JTBD.pro" width="159"/>
+        </a>
+      </nav>
+
+
+        <div class="section--min-heigth-400">
+          <div class="column--header">
+            <h1 id="register" class="header__h1">Redirecting...</h1>
+            <p class="header__p">You are being redirected to <a href="page.redirect.to">this page.</a></p>
+          </div>
+
+          <div class="column--header">
+            <img src="{{ '/assets/img/header_making.png' | fingerprint }}" class="header__img" alt=""/>
+          </div>
+        </div>
+      </div>
+     {% include footer-scripts.html %}
+    </body>
+</html>
