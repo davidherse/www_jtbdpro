@@ -1,5 +1,5 @@
 ---
 layout: index
-title: Learn how turn customer research into products that people will buy.
+title: Learn how to turn customer research into products that people will buy.
 permalink: /
 ---
